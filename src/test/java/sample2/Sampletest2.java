@@ -1,4 +1,4 @@
-package sample1;
+package sample2;
 
 import org.testng.annotations.AfterMethod;
 import org.testng.annotations.Test;
@@ -12,12 +12,12 @@ import org.openqa.selenium.io.FileHandler;
 
 import io.github.bonigarcia.wdm.WebDriverManager;
 
-public class SampleTest {
+public class Sampletest2{
 	@Test
 	public void loadGoogle()  {
 		WebDriverManager.chromedriver().setup();
 		WebDriver wd = new ChromeDriver();
-		wd.get("https://www.google.com/");
+		wd.get("https://www.bing.com/");
 		wd.findElement(By.name("q")).sendKeys("chennai");
 		wd.findElement(By.name("q")).submit();
 		
